@@ -5,6 +5,15 @@
 /**
  * navbar toggle
  */
+function downloadCV() {
+  const cvFileName = 'Cv ya.pdf'; // Replace with the actual file name
+  const cvFilePath = 'assets/' + cvFileName; // Assuming the CV is in the assets folder
+
+  const link = document.createElement('a');
+  link.href = cvFilePath;
+  link.download = cvFileName;
+  link.click();
+}
 
 const header = document.querySelector("[data-header]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
